@@ -12,7 +12,7 @@ to the index page(home page).
   If the user does not have an account he can click the "Register" link and he will be redirected to the registration page.
   The registration page contains fields in wich the user can customize his profile by choosing ingredients he does not prefer 
 or ingredients he is not allowed to have in his food because of medical or religious reasons.Based on his profile settings the application
-will suggest recepies for him or filter out recipies in trending or other sections.
+will suggest recipies for him or filter out recipies in trending or other sections.
 
   
   # Home page #
@@ -31,8 +31,8 @@ specific tags so that the application can categorise correctly the recipie.
   From this page the user can modify his personal info and the recipies he has added by clicking the edit or delete button next 
  to the specific recipie he wants to modify.
  
-  # Recepie page #
-  The recepie page is divided in sections and will provide information about the recipie.
+  # Recipie page #
+  The recipie page is divided in sections and will provide information about the recipie.
   The first section will show a description and a image of the dish.
   The second section will provide a list of ingredients.
   The third section will provide the coocking steps and some additional info.
