@@ -1,0 +1,74 @@
+body{
+	background-image: url(background.jpg);
+}
+
+.wrapper{
+	margin:auto;
+	max-width: 400px;
+	/*display: block;*/
+	margin-top: 100px;
+	/*border:1px solid black;*/
+	background-color: rgba(220,220,220,0.9);
+	border-radius: 10px;
+}
+
+
+@media screen and (max-width: 480px){
+	.wrapper{
+		margin-top: 50px;
+	}
+
+	textarea{
+		max-width: 100%;
+	}
+}
+
+
+.input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border : 1px solid #ccc;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+
+form{
+	padding: 8px
+}
+
+label{
+	max-width: 400px;
+	font-weight: bold;
+}
+
+.segment{
+	margin: 8px 0;
+	padding: 12px 10px;
+}
+
+.checkbox-text{
+	font-weight: normal;
+	padding-left: 15px;
+}
+
+h2{
+	padding: 0px 15px;
+}
+
+textarea{
+	resize: none;
+	width: 27em;
+}
+
+button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border:none;
+	cursor:pointer;
+	width: 100%;
+}

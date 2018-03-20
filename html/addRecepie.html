@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<link rel="stylesheet" type="text/css" href="../css/addRecepie.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Recepie</title>
+</head>
+<body>
+	<div class="wrapper">
+			<header>
+				<h2>New Recepie</h2>
+			</header>
+			<form id="register-form" action="retete.html">
+
+				<div class="segment">
+					<label>Recepie name</label>
+					<input type="text" name="recepieName" class="input" placeholder="Recepie Name" required="true">
+				</div>
+
+				<div class="segment">
+					<input type="checkbox" name="vegetarian">
+					<label class="checkbox-text">Vegetarian</label>
+				</div>
+
+				<div class="segment">
+					<label>Possible harmful ingredients</label>
+					<ul>
+						<li >
+							<input type="checkbox" name="gluten">
+							<label class="checkbox-text">Gluten</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="peanuts">
+							<label class="checkbox-text">Peanuts</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="lactose">
+							<label class="checkbox-text">Lactose</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="sugar">
+							<label class="checkbox-text">Sugar</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="salt">
+							<label class="checkbox-text">Excessive salt</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="oil">
+							<label class="checkbox-text">Oil</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="fat">
+							<label class="checkbox-text">Fat</label>
+						</li>
+
+
+					</ul>
+				</div>
+
+				<div class="segment">
+					<label>Ingredients</label>
+					<textarea rows="6" name="comment" form="register-form" required="true"></textarea>
+				</div>
+
+				<div class="segment">
+					<label>Description how to prepare</label>
+					<textarea rows="6" col="48" name="comment" form="register-form" required="true"></textarea>
+				</div>
+
+
+				<div class="segment">
+					<button type="submit">Submit</button>
+					
+				</div>
+
+			</form>
+		</div>
+
+</body>
+</html>
