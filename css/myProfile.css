@@ -17,6 +17,10 @@
 	textarea{
 		max-width: 100%;
 	}
+
+	.recepie-list-text{
+		display: block;
+	}
 }
 
 
@@ -43,8 +47,6 @@ label{
 .segment{
 	margin: 8px 0;
 	padding: 12px 10px;
-	position: relative;
-	display: block;
 }
 
 .segment-list{
@@ -91,19 +93,16 @@ body{
 	width: 30%;
 	display: inline;
 	background-color: #4CAF50;
-	margin: 3px 8px;
+	margin: 3px 3px;
 }
 
 .delete-btn{
 	width: 30%;
 	display: inline;
 	background-color: red;
-	margin: 3px 8px;
+	margin: 3px 3px;
 }
 
-.edit-btn-pass{
-	width: 40%;
-	display: block;
-	position: absolute;
-	right: 0;
+.recepie-list-text{
+	display:inline-block;
 }
