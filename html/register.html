@@ -1,52 +1,107 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Register</title>
-	<link rel="stylesheet" type="text/css" href="../css/register.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<div class="wrapper">
-		<form>
-				<label>E-mail:</label>
-				<input type="text" name="email" class="input" placeholder="E-mail">
-			
-			
-				<label>Password:</label>
-				<input type="password" name="pasword" class="input" placeholder="Password">
-				<label>Repeat password:</label>
-				<input type="password" name="pasword" class="input" placeholder="Repeat password">
-				
-				<div style="display:block">
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<header>
+				<h2>Register Form</h2>
+			</header>
+			<form id="register-form" action="index.html">
+
+				<div class="segment">
+					<label>E-mail:</label>
+					<input type="text" name="email" class="input" placeholder="E-mail" required="true">
+
+
+
+					<label>Password:</label>
+					<input type="password" name="pasword" class="input" placeholder="Password" required>
+
+
+					<label>Repeat password:</label>
+					<input type="password" name="pasword" class="input" placeholder="Repeat password" required>
+				</div>
+
+				<div class="segment">
 					<input type="checkbox" name="vegetarian">
-					<label>Vegetarian</label>
-				<div>
+					<label class="checkbox-text">Vegetarian</label>
+				</div>
 
-				<label>Allergenic ingredients</label>
-				<ul>
-					<li>
-						<input type="checkbox" name="gluten">
-						<label class="list-item">Gluten</label>
-					</li>
+				<div class="segment">
+					<label>Ingredients not allowed for medical reasons</label>
+					<ul>
+						<li >
+							<input type="checkbox" name="gluten">
+							<label class="checkbox-text">Gluten</label>
+						</li>
 
-					<li>
-						<input type="checkbox" name="peanuts">
-						<label class="list-item">Peanuts</label>
-					</li>
+						<li >
+							<input type="checkbox" name="peanuts">
+							<label class="checkbox-text">Peanuts</label>
+						</li>
 
-					<li>
-						<input type="checkbox" name="gluten">
-						<label class="list-item">Gluten</label>
-					</li>
+						<li >
+							<input type="checkbox" name="lactose">
+							<label class="checkbox-text">Lactose</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="sugar">
+							<label class="checkbox-text">Sugar</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="salt">
+							<label class="checkbox-text">Excessive salt</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="oil">
+							<label class="checkbox-text">Oil</label>
+						</li>
+
+						<li >
+							<input type="checkbox" name="fat">
+							<label class="checkbox-text">Fat</label>
+						</li>
 
 
-				</ul>
+					</ul>
+				</div>
+
+				<div class="segment">
+					<label>Ingredients you don't want in your recepies</label>
+					<textarea rows="4" name="comment" form="register-form"></textarea>
+				</div>
+
+				<div class="segment">
+					<label>Starting day</label>
+					<input type="date" name="starting-date" class="input">
+
+					<label>Ending day</label>
+					<input type="date" name="ending-date" class="input">
+
+					<label>Ingredients not allowed during this period</label>
+					<textarea rows="4" col="48" name="comment" form="register-form"></textarea>
+				</div>
 
 
+				<div class="segment">
+					<button type="submit">Submit</button>
+					
+				</div>
 
+			</form>
 
-		</form>
-	</div>
+			<div class="segment">
+				<a href="login.html">Back to login page</a>
+			</div>
+		</div>
 
-</body>
-</html>	
+	</body>
+	</html>	
