@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px) {
 	.wrapper{
 		margin-top: 50px;
 	}
@@ -20,6 +20,11 @@
 
 	.recepie-list-text{
 		display: block;
+	}
+
+	.navigation-bar {
+		margin-top: 55px;
+		margin-left: 20px;
 	}
 }
 
@@ -75,7 +80,8 @@ button{
 	margin: 8px 0;
 	border:none;
 	cursor:pointer;
-	width: 100%;
+	border-radius: 10px;
+	/*width: 100%;*/
 }
 
 
@@ -94,6 +100,7 @@ body{
 	display: inline;
 	background-color: #4CAF50;
 	margin: 3px 3px;
+	border-radius: 10px;
 }
 
 .delete-btn{
@@ -101,6 +108,7 @@ body{
 	display: inline;
 	background-color: red;
 	margin: 3px 3px;
+	border-radius: 10px;
 }
 
 .recepie-list-text{

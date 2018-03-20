@@ -4,150 +4,184 @@
 
 	<title>My Profile</title>
 	<link rel="stylesheet" type="text/css" href="../css/myProfile.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="wrapper">
-		<h1>My profile</h1>
-	<form id="register-form" action="index.html">
-
-				<div class="segment">
-					<label>E-mail:</label>
-					<input type="text" name="email" class="input" placeholder="E-mail">
-
-
-
-					<label>Password:</label>
-					<input type="password" name="pasword" class="input" placeholder="Password" >
-
-
-					<label>Repeat password:</label>
-					<input type="password" name="pasword" class="input" placeholder="Repeat password" >
-
-					<button class="edit-btn">Change password</button>
-				</div>
-
-				<div class="segment">
-					<input type="checkbox" name="vegetarian">
-					<label class="checkbox-text">Vegetarian</label>
-				</div>
-
-				<div class="segment">
-					<label>Ingredients not allowed for medical reasons</label>
-					<ul>
-						<li >
-							<input type="checkbox" name="gluten">
-							<label class="checkbox-text">Gluten</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="peanuts">
-							<label class="checkbox-text">Peanuts</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="lactose">
-							<label class="checkbox-text">Lactose</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="sugar">
-							<label class="checkbox-text">Sugar</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="salt">
-							<label class="checkbox-text">Excessive salt</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="oil">
-							<label class="checkbox-text">Oil</label>
-						</li>
-
-						<li >
-							<input type="checkbox" name="fat">
-							<label class="checkbox-text">Fat</label>
-						</li>
-
-
-					</ul>
-				</div>
-
-				<div class="segment">
-					<label>Ingredients you don't want in your recepies</label>
-					<textarea rows="4" name="comment" form="register-form"></textarea>
-				</div>
-
-				<div class="segment">
-					<label>Starting day</label>
-					<input type="date" name="starting-date" class="input">
-
-					<label>Ending day</label>
-					<input type="date" name="ending-date" class="input">
-
-					<label>Ingredients not allowed during this period</label>
-					<textarea rows="4" col="48" name="comment" form="register-form"></textarea>
-				</div>
-
-				<div class="segment--list">
-					<ol>
-						<li>
-							<div class="recepie-list">
-								<span class=recepie-list-text>
-									My recepie 
-								</span>
-
-								<button class="edit-btn">Edit</button>
-								<button class="delete-btn">Delete</button>
-							</div>
-						</li>
-
-						<li>
-							<div class="recepie-list">
-								<span class=recepie-list-text>
-									My recepie 
-								</span>
-
-								<button class="edit-btn">Edit</button>
-								<button class="delete-btn">Delete</button>
-							</div>
-						</li>
-
-						<li>
-							<div class="recepie-list">
-								<span class=recepie-list-text>
-									My recepie 
-								</span>
-
-								<button class="edit-btn">Edit</button>
-								<button class="delete-btn">Delete</button>
-							</div>
-						</li>
-
-						<li>
-							<div class="recepie-list">
-								<span class=recepie-list-text>
-									My recepie 
-								</span>
-
-								<button class="edit-btn">Edit</button>
-								<button class="delete-btn">Delete</button>
-							</div>
-						</li>
-
-					</ol>
-					
-				</div>
-
-
-				<div class="segment">
-					<button type="submit">Submit changes</button>
-					
-				</div>
-
-			</form>
+	<header>
+		<div class="logo">
+			<a href="index.html">
+				<img src="../css/logo.png">
+			</a>
 		</div>
+
+		<div class="navigation-wrapper">
+			<div class="title">
+				<span>
+					Cuisine Web Helper
+				</span>
+			</div>
+
+			<div class="navigation-bar">
+				<div class="dropdown">
+					<button class="dropdown-btn">Recipes
+						
+					</button>
+					<div class="dropdown-list">
+						<a href="recepiesPage.html">Aperitifs</a>
+						<a href="recepiesPage.html">First course</a>
+						<a href="recepiesPage.html">Second course</a>
+						<a href="recepiesPage.html">Deserts</a>
+					</div>
+				</div>
+				
+				<button class="dropdown-anchor" style="margin-left: 4px;" onclick="location.href='addRecepie.html';">Add</button>
+				<button class="dropdown-anchor"  onclick="location.href='myProfile.html';">My profile</button>
+			</div>
+		</div>
+
+	</header>
+	<div class="wrapper">
+		<h2>My profile</h2>
+		<form id="register-form" action="index.html">
+
+			<div class="segment">
+				<label>E-mail:</label>
+				<input type="text" name="email" class="input" placeholder="E-mail">
+
+
+
+				<label>Password:</label>
+				<input type="password" name="pasword" class="input" placeholder="Password" >
+
+
+				<label>Repeat password:</label>
+				<input type="password" name="pasword" class="input" placeholder="Repeat password" >
+
+				<button class="edit-btn" style="width:100%">Change password</button>
+			</div>
+
+			<div class="segment">
+				<input type="checkbox" name="vegetarian">
+				<label class="checkbox-text">Vegetarian</label>
+			</div>
+
+			<div class="segment">
+				<label>Ingredients not allowed for medical reasons</label>
+				<ul>
+					<li >
+						<input type="checkbox" name="gluten">
+						<label class="checkbox-text">Gluten</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="peanuts">
+						<label class="checkbox-text">Peanuts</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="lactose">
+						<label class="checkbox-text">Lactose</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="sugar">
+						<label class="checkbox-text">Sugar</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="salt">
+						<label class="checkbox-text">Excessive salt</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="oil">
+						<label class="checkbox-text">Oil</label>
+					</li>
+
+					<li >
+						<input type="checkbox" name="fat">
+						<label class="checkbox-text">Fat</label>
+					</li>
+
+
+				</ul>
+			</div>
+
+			<div class="segment">
+				<label>Ingredients you don't want in your recepies</label>
+				<textarea rows="4" name="comment" form="register-form"></textarea>
+			</div>
+
+			<div class="segment">
+				<label>Starting day</label>
+				<input type="date" name="starting-date" class="input">
+
+				<label>Ending day</label>
+				<input type="date" name="ending-date" class="input">
+
+				<label>Ingredients not allowed during this period</label>
+				<textarea rows="4" col="48" name="comment" form="register-form"></textarea>
+			</div>
+
+			<div class="segment--list">
+				<ol>
+					<li>
+						<div class="recepie-list">
+							<span class=recepie-list-text>
+								My recepie 
+							</span>
+
+							<button class="edit-btn">Edit</button>
+							<button class="delete-btn">Delete</button>
+						</div>
+					</li>
+
+					<li>
+						<div class="recepie-list">
+							<span class=recepie-list-text>
+								My recepie 
+							</span>
+
+							<button class="edit-btn">Edit</button>
+							<button class="delete-btn">Delete</button>
+						</div>
+					</li>
+
+					<li>
+						<div class="recepie-list">
+							<span class=recepie-list-text>
+								My recepie 
+							</span>
+
+							<button class="edit-btn">Edit</button>
+							<button class="delete-btn">Delete</button>
+						</div>
+					</li>
+
+					<li>
+						<div class="recepie-list">
+							<span class=recepie-list-text>
+								My recepie 
+							</span>
+
+							<button class="edit-btn">Edit</button>
+							<button class="delete-btn">Delete</button>
+						</div>
+					</li>
+
+				</ol>
+				
+			</div>
+
+
+			<div class="segment">
+				<button type="submit" style="width:100%">Submit changes</button>
+				
+			</div>
+
+		</form>
+	</div>
 
 </body>
 </html>

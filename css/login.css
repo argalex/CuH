@@ -3,7 +3,7 @@
 	max-width: 400px;
 	/*display: block;*/
 	align-self: center;
-	margin-top: 300px;
+	margin-top: 100px;
 	background-color: rgba(220,220,220,0.9);
 	border-radius: 10px;
 	position: relative;
@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 480px){
 	.wrapper{
-		margin-top: 200px;
+		margin-top: 50px;
 	}
 }
 .input {
