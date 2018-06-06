@@ -3,15 +3,13 @@ var url = require('url');
 var fs = require('fs');
 var mongoDbConnection = require('./connection.js');
 
-console.log(JSON.stringify(mongoDbConnection));
+
+mongoDbConnection(function (db) {
+})
 
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname;
-
-    mongoDbConnection(function (db) {
-        console.log(db);
-    })
 
     fs.readFile("html/" + filename, function(err, data) {
         if (err) {
@@ -22,6 +20,5 @@ http.createServer(function (req, res) {
         res.write(data);
         return res.end();
     });
-
 
 }).listen(8081);

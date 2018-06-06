@@ -10,7 +10,7 @@
 		<header>
 			<div class="logo">
 				<a href="index.html">
-					<img src="../css/logo.png">
+					<img src="/css/logo.png">
 				</a>
 			</div>
 
@@ -28,24 +28,24 @@
 			
 			<h2>Register Form</h2>
 			
-			<form id="register-form" action="index.html">
+			<form id="register-form">
 
 				<div class="segment">
 					<label>E-mail:</label>
-					<input type="text" name="email" class="input" placeholder="E-mail" required="true">
+					<input type="email" name="email" class="input" placeholder="E-mail" required="true" id="email">
 
 
 
 					<label>Password:</label>
-					<input type="password" name="pasword" class="input" placeholder="Password" required>
+					<input type="password" name="pasword" class="input" placeholder="Password" required id="password">
 
 
 					<label>Repeat password:</label>
-					<input type="password" name="pasword" class="input" placeholder="Repeat password" required>
+					<input type="password" name="pasword" class="input" placeholder="Repeat password" required id="confirm_password">
 				</div>
 
 				<div class="segment">
-					<input type="checkbox" name="vegetarian">
+					<input type="checkbox" name="vegetarian" id="vegan">
 					<label class="checkbox-text">Vegetarian</label>
 				</div>
 
@@ -53,37 +53,37 @@
 					<label>Ingredients not allowed for medical reasons</label>
 					<ul>
 						<li >
-							<input type="checkbox" name="gluten">
+							<input type="checkbox" name="gluten" id="gluten">
 							<label class="checkbox-text">Gluten</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="peanuts">
+							<input type="checkbox" name="peanuts" id="peanuts">
 							<label class="checkbox-text">Peanuts</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="lactose">
+							<input type="checkbox" name="lactose" id="lactose">
 							<label class="checkbox-text">Lactose</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="sugar">
+							<input type="checkbox" name="sugar" id="sugar">
 							<label class="checkbox-text">Sugar</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="salt">
+							<input type="checkbox" name="salt" id="salt">
 							<label class="checkbox-text">Excessive salt</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="oil">
+							<input type="checkbox" name="oil" id="oil">
 							<label class="checkbox-text">Oil</label>
 						</li>
 
 						<li >
-							<input type="checkbox" name="fat">
+							<input type="checkbox" name="fat" id="fat">
 							<label class="checkbox-text">Fat</label>
 						</li>
 
@@ -93,23 +93,23 @@
 
 				<div class="segment">
 					<label>Ingredients you don't want in your recepies</label>
-					<textarea rows="4" name="comment" form="register-form"></textarea>
+					<textarea rows="4" name="comment" form="register-form" id="forbidden"></textarea>
 				</div>
 
 				<div class="segment">
 					<label>Starting day</label>
-					<input type="date" name="starting-date" class="input">
+					<input type="date" name="starting-date" class="input" id="sDate">
 
 					<label>Ending day</label>
-					<input type="date" name="ending-date" class="input">
+					<input type="date" name="ending-date" class="input" id="eDate">
 
 					<label>Ingredients not allowed during this period</label>
-					<textarea rows="4" col="48" name="comment" form="register-form"></textarea>
+					<textarea rows="4" col="48" name="comment" form="register-form" id="forbidden2"></textarea>
 				</div>
 
 
 				<div class="segment">
-					<button type="submit" style="width:100%">Submit</button>
+					<button type="submit" style="width:100%" >Submit</button>
 					
 				</div>
 
@@ -120,5 +120,6 @@
 			</div>
 		</div>
 
+		<script src="register.js"></script>
 	</body>
 	</html>	
